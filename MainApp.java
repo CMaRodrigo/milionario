@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**
  * A classe {MainApp} contém uma simulçao do jogo "Quem quer ser um milionário" onde serão feitas perguntas ao usuário e caso este
- * acerte o jogo avança, o jogo tem um total de 13 perguntas.
+ * acerte o jogo avança, o jogo tem um total de 13 perguntas. O programa avaliará se sua resposta está correta e adicionará dinheiro em caso de acerto.
  * 
  * As alternativas são a, b, c, d. Sendo necessário ser em minúsculo.
  * 
