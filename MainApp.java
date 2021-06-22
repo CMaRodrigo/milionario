@@ -1,35 +1,30 @@
 import java.util.Scanner;
-
 /**
- * A classe {MainApp} contém uma simulçao do jogo "Quem quer ser um milhonário" onde serão feitas perguntas ao usuário e caso este
+ * A classe {MainApp} contém uma simulçao do jogo "Quem quer ser um milionário" onde serão feitas perguntas ao usuário e caso este
  * acerte o jogo avança, o jogo tem um total de 13 perguntas.
  * 
  * As alternativas são a, b, c, d. Sendo necessário ser em minúsculo.
  * 
 @author Rodrigo da Rosa (rodrigo.rosa001@edu.pucrs.br);
+
+@ 22/06/2021
 */
 
 
+
 public class MainApp{
-    
-    static void print(){
-        
-        System.out.println("APOIO\n");
-        System.out.println("50/50                          Platéia                       Ligação");
-    }
     public static void main(String[] args){
         Scanner teclado = new Scanner(System.in);
     
-        String a = "a";
-        String b = "b";
-        String c = "c";
-        String d = "d";
-        String alternativa = "0";
-        int vidas = 1;
-        int conta = 0;
-        String meio_meio = "1";
-        int plateia = 2;
-        int ligacao = 3;
+       String a;
+        String b;
+        String c;
+        String d;
+        String alternativa;
+        int vidas;
+        int conta;
+        
+        System.out.println("Seja muito bem vindo ao Quem Quer Ser um Milionário!! Se você acertar as próximas 13 perguntas será o grande campeão!! \n");
     
         String[] perguntas = {"Quem foi o presidente do Brasil no ano de 2014?", 
                             "A laranja é rica em qual vitamina?",
@@ -44,25 +39,30 @@ public class MainApp{
                             "Para obter R$ 32 com a mesma quantidade de moedas de um, cinco e dez centavos, quantas moedas de cada valor são necessárias?",
                             "Qual destes animais é conhecido como cão selvagem australiano?",
                             "Qual a classificação dada ao medicamento obtido exclusivamente da matéria-prima vegetal?"};
+                            
+       teclado = new Scanner(System.in);
+        a = "a";
+        b = "b";
+        c = "c";
+        d= "d";
+        alternativa = "0";
+        vidas = 1;
+        conta = 0; 
+                            
         while(vidas == 1){
             
         System.out.println(perguntas[0]);
         System.out.println("\n");
         System.out.println(" A - Dilma Rouseff \n B - Michel Temer \n C - Jair Bolsonaro \n D - Lula");
-        print();
         
         alternativa = teclado.nextLine();
-            
         if(alternativa.equals(a)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = 1000);
-        }
-        else if(alternativa.equals(meio_meio)){
-            System.out.println(" A - Dilma Rouseff\n B - Michel Temer");
-            alternativa = teclado.nextLine();
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 1000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
 
@@ -74,11 +74,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
         if(alternativa.equals(b)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 1000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 1000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -89,11 +90,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
         if(alternativa.equals(a)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 3000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 3000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -105,11 +107,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
         if(alternativa.equals(d)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 5000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 5000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -121,11 +124,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
     if(alternativa.equals(c)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 10000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 10000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -137,11 +141,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
         if(alternativa.equals(b)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 20000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 20000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
     System.out.println("\n");
@@ -153,11 +158,12 @@ public class MainApp{
     alternativa = teclado.nextLine();
     
     if(alternativa.equals(b)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 40000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 40000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
     System.out.print("\n");
@@ -169,12 +175,13 @@ public class MainApp{
     alternativa = teclado.nextLine();
     
     if(alternativa.equals(a)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 70000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 70000;
+            System.out.println("Seu saldo é de: R$ " + conta);
             
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
     System.out.println("\n");
@@ -186,11 +193,12 @@ public class MainApp{
     alternativa = teclado.nextLine();
     
     if(alternativa.equals(d)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 90000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 90000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -203,11 +211,12 @@ public class MainApp{
         
         
     if(alternativa.equals(c)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 120000);
+            System.out.println("ACERTOU!!!\n");
+            conta = conta + 120000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
         System.out.println("\n");
@@ -218,11 +227,12 @@ public class MainApp{
         alternativa = teclado.nextLine();
         
         if(alternativa.equals(c)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 160000);
+            System.out.println("ACERTOU!!! \n");
+            conta = conta + 160000;
+            System.out.println("Seu saldo é de: R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
     System.out.println("\n");
@@ -230,15 +240,16 @@ public class MainApp{
     System.out.println(perguntas[11]);
     System.out.println(" A - Dingo\n B - Bisão\n C - Curica\n D - Acauã");
     
-        alternativa = teclado.nextLine();
-        
+    alternativa = teclado.nextLine();
+
         
     if(alternativa.equals(a)){
-            System.out.println("ACERTOU!!!");
-            System.out.println(conta = conta + 200000);
+            System.out.println("ACERTOU!!! \n");
+            conta = conta + 200000;
+            System.out.println("Seu saudo é de R$ " + conta);
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
     System.out.println("\n");
@@ -252,12 +263,11 @@ public class MainApp{
             System.out.println("VOCẼ É O MAIS NOVO MILIONÁRIO BRASILEIRO, PARABENS!!!");
         }
         else{
-            System.out.println("ERROUUUUU!!");
+            System.out.println("ERROUUUUU!! \n Agradecemos a sua participação, infelizmente não foi desta vez.");
             break;
         }
-        System.out.println("\n");
-        System.out.println("Não foi desta vez, agradecemos a sua participação e desejamos sorte!\n");
+        teclado.close();
         break;
-    }    
+        }    
     }   
 }
